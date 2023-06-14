@@ -1,0 +1,120 @@
+@use '../../scss/Variables' as *;
+
+%center-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 0.3rem;
+  background-color: $dark;
+  color: $white-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  line-height: 1;
+
+  .logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px 0 20px;
+    padding: 0.2rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+    &:hover {
+      outline: 1px double $white-color;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .header_search-container {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1;
+    width: 100%;
+    .header-drop-menu {
+      background-color: $body;
+      height: 100%;
+      padding: 12px;
+      @extend %center-item;
+      border-top-left-radius: 0.1rem;
+      border-bottom-left-radius: 0.1rem;
+      @media screen and (max-width: 768px) {
+        padding: 9px;
+      }
+    }
+    .search {
+      width: 100%;
+      min-width: 100px;
+      height: 100%;
+      margin: 0;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 10px;
+      }
+      input.header-search-input {
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        &::placeholder {
+          font-weight: 600;
+        }
+      }
+    }
+    .header-search-icon {
+      height: 100%;
+      padding: 12px;
+      background-color: $primary;
+      @extend %center-item;
+      border-top-right-radius: 0.1rem;
+      border-bottom-right-radius: 0.1rem;
+      @media screen and (max-width: 768px) {
+        padding: 5px;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .header_option {
+      cursor: pointer;
+      padding: 0.3rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 10px;
+      height: 50px;
+      span.bold-text {
+        font-weight: 600;
+      }
+      .cart-icon {
+        font-size: 2rem;
+      }
+      &:last-child {
+        position: relative;
+        .cart-count {
+          color: $primary;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -160%);
+        }
+      }
+      &:hover {
+        outline: 1px double $white-color;
+      }
+    }
+  }
+}
