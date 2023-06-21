@@ -1,16 +1,13 @@
-type Section = {
-  image: string;
-  title: string;
-};
+import ProductSection from '../types/Section';
 
 interface Product {
+  id: string | number;
   title: string;
-  sections: Section[];
+  sections: ProductSection[];
   deal?: {
     label: string;
     message: string;
   };
-  
 }
 
 export default Product;

@@ -1,17 +1,58 @@
+@use '../../scss/Variables' as *;
+
 .home {
-  img.home_image {
-    width: 100%;
-    z-index: -1;
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 50%,
-      rgba(0, 0, 0, 0)
-    );
-    mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 50%,
-      rgba(0, 0, 0, 0)
-    );
-    margin-bottom: -150px;
+  .container {
+    width: 1600px;
+    margin: 0 auto;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+    img.home_image {
+      width: 100%;
+      z-index: -1;
+      -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0)
+      );
+      mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0)
+      );
+      margin-bottom: -25rem;
+    }
+
+    .products {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 2rem;
+      .card {
+        background-color: $content;
+        padding: 2rem;
+        z-index: 1;
+        width: 25%;
+        .head_title {
+          margin: 0 0 1rem;
+          font-weight: 600;
+        }
+        .sections {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          width: 100%;
+          .section {
+            width: 48%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
   }
 }

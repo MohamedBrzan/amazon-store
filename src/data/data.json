@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Gaming accessories",
+      "sections": [
+        {
+          "id": 2,
+          "title": "Headsets",
+          "image": "/src/assets/images/products/Headsets.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Keyboards",
+          "image": "/src/assets/images/products/Keyboards.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Computer mice",
+          "image": "/src/assets/images/products/Mouses.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Chairs",
+          "image": "/src/assets/images/products/Chairs.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Shop deals in Fashion",
+      "sections": [
+        {
+          "id": 7,
+          "title": "Jeans under $50",
+          "image": "/src/assets/images/products/Jeans.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Tops under $25",
+          "image": "/src/assets/images/products/Tops.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Dresses under $30",
+          "image": "/src/assets/images/products/Dresses.jpg"
+        },
+        {
+          "id": 10,
+          "title": "Shoes under $50",
+          "image": "/src/assets/images/products/Shoes.jpg"
+        }
+      ]
+    },
+
+    {
+      "id": 16,
+      "title": "Gaming accessories",
+      "sections": [
+        {
+          "id": 17,
+          "title": "Headsets",
+          "image": "/src/assets/images/products/Headsets.jpg"
+        },
+        {
+          "id": 18,
+          "title": "Keyboards",
+          "image": "/src/assets/images/products/Keyboards.jpg"
+        },
+        {
+          "id": 19,
+          "title": "Computer mice",
+          "image": "/src/assets/images/products/Mouses.jpg"
+        },
+        {
+          "id": 20,
+          "title": "Chairs",
+          "image": "/src/assets/images/products/Chairs.jpg"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Shop deals in Fashion",
+      "sections": [
+        {
+          "id": 12,
+          "title": "Jeans under $50",
+          "image": "/src/assets/images/products/Jeans.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,18 +1,16 @@
 import { Link } from 'react-router-dom';
-import { TiShoppingCart } from 'react-icons/ti';
 import { AiOutlineSearch } from 'react-icons/ai';
 
 import './Header.scss';
+
+// src='https://pngimg.com/uploads/amazon/amazon_PNG25.png'
 
 const Header = () => {
   return (
     <header>
       <div className='logo'>
         <Link to='/'>
-          <img
-            src='https://pngimg.com/uploads/amazon/amazon_PNG25.png'
-            alt='Amazon Logo.'
-          />
+          <img src='/src/assets/nav-sprite-global.png' alt='Amazon Logo.' />
         </Link>
       </div>
 
@@ -61,13 +59,11 @@ const Header = () => {
         </div>
         <div className='header_option'>
           <span className='cart-icon'>
-            {/* <TiShoppingCart /> */}
             <img src='/src/assets/nav-sprite-global.png' alt='Cart Icon' />
           </span>
           <span className='cart-count'>
             <strong>15</strong>
           </span>
-         
         </div>
       </nav>
     </header>
