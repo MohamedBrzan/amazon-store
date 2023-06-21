@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { TiShoppingCart } from 'react-icons/ti';
 import { AiOutlineSearch } from 'react-icons/ai';
 
@@ -7,23 +8,37 @@ const Header = () => {
   return (
     <header>
       <div className='logo'>
-        <img
-          src='https://pngimg.com/uploads/amazon/amazon_PNG25.png'
-          alt='Amazon Logo.'
-        />
+        <Link to='/'>
+          <img
+            src='https://pngimg.com/uploads/amazon/amazon_PNG25.png'
+            alt='Amazon Logo.'
+          />
+        </Link>
       </div>
 
       <div className='header_search-container'>
-        <div className='header-drop-menu'>select</div>
         <div className='search'>
+          <div className='header-drop-menu'>
+            <select>
+              <optgroup label='clothes'>
+                <option value='t-shirt'>T-shirt</option>
+                <option value='pants'>Pants</option>
+              </optgroup>
+              <optgroup label='shoes'>
+                <option value='shoes'>shoes</option>
+              </optgroup>
+            </select>
+          </div>
           <input
-            type='text'
+            type='search'
             className='header-search-input'
             placeholder='Search here...'
+            required
           />
-        </div>
-        <div className='header-search-icon'>
-          <AiOutlineSearch size={25} />
+
+          <div className='header-search-icon'>
+            <AiOutlineSearch size={25} />
+          </div>
         </div>
       </div>
       <nav className='header_nav'>
@@ -46,11 +61,13 @@ const Header = () => {
         </div>
         <div className='header_option'>
           <span className='cart-icon'>
-            <TiShoppingCart />
+            {/* <TiShoppingCart /> */}
+            <img src='/src/assets/nav-sprite-global.png' alt='Cart Icon' />
           </span>
           <span className='cart-count'>
             <strong>15</strong>
           </span>
+         
         </div>
       </nav>
     </header>
