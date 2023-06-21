@@ -125,14 +125,9 @@ header {
       overflow: hidden;
       margin: 0 10px;
       height: 50px;
-      @media screen and (max-width: 400px) {
-        font-size: 13px;
-      }
+
       span.bold-text {
         font-weight: 600;
-        @media screen and (max-width: 400px) {
-          font-size: 12px;
-        }
       }
       .cart-icon {
         position: relative;
@@ -140,14 +135,14 @@ header {
         font-size: 2rem;
         img {
           position: relative;
-          transform: translate(-5px, -177px);
+          transform: translate(-5px, -123px);
         }
       }
       .cart-count {
         color: $primary;
         position: absolute;
-        right: 24px;
-        top: 13px;
+        right: 16px;
+        top: 10px;
       }
 
       &:hover {
