@@ -1,3 +1,4 @@
+import { useRef, MutableRefObject, useState } from 'react';
 import c1 from '../../../assets/images/carousel/c1.jpg';
 import c2 from '../../../assets/images/carousel/c2.jpg';
 import c3 from '../../../assets/images/carousel/c3.jpg';
@@ -11,13 +12,10 @@ import c10 from '../../../assets/images/carousel/c10.jpg';
 import c11 from '../../../assets/images/carousel/c11.jpg';
 import c12 from '../../../assets/images/carousel/c12.jpg';
 import c13 from '../../../assets/images/carousel/c13.jpg';
-import { useRef, MutableRefObject, useState, useEffect } from 'react';
 
 const ProductCarousel = () => {
-  // const [translateXVal, setTranslateXVal] = useState<number>(0);
-  // eslint-disable-next-line prefer-const
-  let [count, setCount] = useState<number>(1);
-  const step = 200;
+  const [count, setCount] = useState<number>(1);
+  const step = 200 * 2;
 
   const carouselRef = useRef() as MutableRefObject<HTMLDivElement>;
   const images = [
@@ -44,28 +42,23 @@ const ProductCarousel = () => {
     ) {
       return;
     } else {
-      setCount((count -= step));
+      setCount((prev) => (prev -= step));
     }
   };
 
   const prevScroll = () => {
-    console.log(count);
     if (count >= 1) {
       return;
     } else {
-      setCount((count += step));
+      setCount((prev) => (prev += step));
     }
   };
 
   return (
     <div className='carousel'>
       <div className='buttons'>
-        <button className='next' onClick={nextScroll}>
-          next
-        </button>
-        <button className='previous' onClick={prevScroll}>
-          previous
-        </button>
+        <button className='next' onClick={nextScroll}></button>
+        <button className='prev' onClick={prevScroll}></button>
       </div>
       <div
         className='inner_carousel'

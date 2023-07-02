@@ -100,7 +100,7 @@
     }
     .carousel {
       background-color: $content;
-      overflow: hidden;
+      overflow-x: hidden;
       .buttons {
         display: flex;
         justify-content: space-between;
@@ -108,6 +108,43 @@
         padding: 1rem;
         > * {
           cursor: pointer;
+        }
+        position: relative;
+        .next,
+        .prev {
+          position: absolute;
+          top: 5rem;
+          width: 3rem;
+          aspect-ratio: 0.5;
+          z-index: 2;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+          }
+        }
+        .next {
+          &::before {
+            content: '';
+            font-family: 'FontAwesome';
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          left: 0;
+        }
+
+        .prev {
+          &::before {
+            content: '';
+            font-family: 'FontAwesome';
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          right: 0;
         }
       }
       .inner_carousel {
