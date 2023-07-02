@@ -8,6 +8,7 @@ interface Product {
     label: string;
     message: string;
   };
+  link: string;
 }
 
 export default Product;

@@ -24,7 +24,8 @@
           "title": "Chairs",
           "image": "/src/assets/images/products/Chairs.jpg"
         }
-      ]
+      ],
+      "link": "Explore more"
     },
     {
       "id": 6,
@@ -50,7 +51,8 @@
           "title": "Shoes under $50",
           "image": "/src/assets/images/products/Shoes.jpg"
         }
-      ]
+      ],
+      "link": "shop now"
     },
 
     {
@@ -77,7 +79,8 @@
           "title": "Chairs",
           "image": "/src/assets/images/products/Chairs.jpg"
         }
-      ]
+      ],
+      "link": "see more"
     },
     {
       "id": 11,
@@ -86,9 +89,10 @@
         {
           "id": 12,
           "title": "Jeans under $50",
-          "image": "/src/assets/images/products/Jeans.jpg"
+          "image": "/src/assets/images/products/Deals.jpg"
         }
-      ]
+      ],
+      "link": "see all deals"
     }
   ]
 }

@@ -4,6 +4,8 @@
   .container {
     width: 1600px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     @media screen and (max-width: 991px) {
       width: 100%;
     }
@@ -20,20 +22,44 @@
         rgba(0, 0, 0, 1) 50%,
         rgba(0, 0, 0, 0)
       );
-      margin-bottom: -25rem;
+      margin-bottom: -7rem;
+      @media (min-width: 991px) {
+        margin-bottom: -25rem;
+      }
     }
 
     .products {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
       gap: 20px;
       padding: 2rem;
       .card {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: $content;
-        padding: 2rem;
+        padding: 1rem 2rem;
         z-index: 1;
-        width: 25%;
+        min-width: 350px;
+        min-height: 420px;
+        margin: 0 auto;
+        overflow: hidden;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
+        @media (min-width: 501px) and (max-width: 768px) {
+          width: 50%;
+        }
+        // @media (min-width: 768px) and (max-width: 991px) {
+        //   width: 33.33%;
+        // }
+        @media (min-width: 992px) {
+          width: 25%;
+        }
         .head_title {
           margin: 0 0 1rem;
           font-weight: 600;
@@ -45,11 +71,61 @@
           width: 100%;
           .section {
             width: 48%;
+            margin-bottom: 1.3rem;
             img {
               width: 100%;
               height: 100%;
               object-fit: cover;
             }
+            &.alone {
+              width: 100%;
+              height: 100%;
+              img {
+                width: 100%;
+                height: 290px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .product_link {
+        text-decoration: none;
+        color: $link-color;
+        &:hover {
+          color: $link-hover;
+          text-decoration: underline;
+        }
+      }
+    }
+    .carousel {
+      background-color: $content;
+      overflow: hidden;
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        > * {
+          cursor: pointer;
+        }
+      }
+      .inner_carousel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+
+        transition: transform 1s ease-in-out;
+        .carousel_item {
+          display: flex;
+          margin: 10px;
+          width: 100%;
+          flex: 1;
+          img {
+            width: 200px;
+            height: 100%;
+            object-fit: contain;
           }
         }
       }
