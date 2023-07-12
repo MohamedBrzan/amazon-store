@@ -7,22 +7,22 @@
         {
           "id": 2,
           "title": "Headsets",
-          "image": "/src/assets/images/products/Headsets.jpg"
+          "image": "/images/products/Headsets.jpg"
         },
         {
           "id": 3,
           "title": "Keyboards",
-          "image": "/src/assets/images/products/Keyboards.jpg"
+          "image": "/images/products/Keyboards.jpg"
         },
         {
           "id": 4,
           "title": "Computer mice",
-          "image": "/src/assets/images/products/Mouses.jpg"
+          "image": "/images/products/Mouses.jpg"
         },
         {
           "id": 5,
           "title": "Chairs",
-          "image": "/src/assets/images/products/Chairs.jpg"
+          "image": "/images/products/Chairs.jpg"
         }
       ],
       "link": "Explore more"
@@ -34,22 +34,22 @@
         {
           "id": 7,
           "title": "Jeans under $50",
-          "image": "/src/assets/images/products/Jeans.jpg"
+          "image": "/images/products/Jeans.jpg"
         },
         {
           "id": 8,
           "title": "Tops under $25",
-          "image": "/src/assets/images/products/Tops.jpg"
+          "image": "/images/products/Tops.jpg"
         },
         {
           "id": 9,
           "title": "Dresses under $30",
-          "image": "/src/assets/images/products/Dresses.jpg"
+          "image": "/images/products/Dresses.jpg"
         },
         {
           "id": 10,
           "title": "Shoes under $50",
-          "image": "/src/assets/images/products/Shoes.jpg"
+          "image": "/images/products/Shoes.jpg"
         }
       ],
       "link": "shop now"
@@ -62,22 +62,22 @@
         {
           "id": 17,
           "title": "Headsets",
-          "image": "/src/assets/images/products/Headsets.jpg"
+          "image": "/images/products/Headsets.jpg"
         },
         {
           "id": 18,
           "title": "Keyboards",
-          "image": "/src/assets/images/products/Keyboards.jpg"
+          "image": "/images/products/Keyboards.jpg"
         },
         {
           "id": 19,
           "title": "Computer mice",
-          "image": "/src/assets/images/products/Mouses.jpg"
+          "image": "/images/products/Mouses.jpg"
         },
         {
           "id": 20,
           "title": "Chairs",
-          "image": "/src/assets/images/products/Chairs.jpg"
+          "image": "/images/products/Chairs.jpg"
         }
       ],
       "link": "see more"
@@ -89,7 +89,7 @@
         {
           "id": 12,
           "title": "Jeans under $50",
-          "image": "/src/assets/images/products/Deals.jpg"
+          "image": "/images/products/Deals.jpg"
         }
       ],
       "link": "see all deals"
