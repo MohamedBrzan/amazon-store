@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 
 import './Header.scss';
+import DropdownMenu from '../DropdownMenu/DropdownMenu';
 
 // src='https://pngimg.com/uploads/amazon/amazon_PNG25.png'
 
@@ -10,7 +11,7 @@ const Header = () => {
     <header>
       <div className='logo'>
         <Link to='/'>
-          <img src='/src/assets/nav-sprite-global.png' alt='Amazon Logo.' />
+          <img src='/nav-sprite-global.png' alt='Amazon Logo.' />
         </Link>
       </div>
 
@@ -44,12 +45,16 @@ const Header = () => {
           <span>
             <small>English</small>
           </span>
+          <DropdownMenu left={20} />
+          <div className='modal'></div>
         </div>
         <div className='header_option'>
           <span>
             <small>Hello, Guest</small>
           </span>
           <span className='bold-text'>Account & Lists</span>
+          <DropdownMenu left={20} />
+          <div className='modal'></div>
         </div>
         <div className='header_option'>
           <span>

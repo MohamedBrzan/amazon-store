@@ -127,7 +127,6 @@ header {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      overflow: hidden;
       margin: 0 10px;
       height: 50px;
 
@@ -152,7 +151,30 @@ header {
 
       &:hover {
         outline: 1px double $white-color;
+
+        .dropdown_menu,
+        .modal {
+          display: block;
+        }
+
+        .mini_arrow {
+          display: block;
+        }
+      }
+
+      &:last-child {
+        overflow: hidden;
       }
     }
+  }
+  .modal {
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+    aspect-ratio: 1;
+    min-width: 500vw;
+    z-index: 9;
+    display: none;
   }
 }

@@ -1,0 +1,32 @@
+@use '../../scss/Variables' as *;
+
+.dropdown_component {
+  .dropdown_menu {
+    position: absolute;
+    background-color: $content;
+    aspect-ratio: 16/9;
+    width: 16rem;
+    top: 3.5rem;
+    left: 0;
+    z-index: 30;
+    > a {
+      display: block;
+    }
+
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .mini_arrow {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    aspect-ratio: 1;
+    border-width: 0.8rem;
+    border-style: solid;
+    border-color: transparent transparent $content transparent;
+    z-index: 10;
+    display: none;
+  }
+}
