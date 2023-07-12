@@ -1,17 +1,17 @@
 import { useRef, MutableRefObject, useState } from 'react';
-import c1 from '../../../assets/images/carousel/c1.jpg';
-import c2 from '../../../assets/images/carousel/c2.jpg';
-import c3 from '../../../assets/images/carousel/c3.jpg';
-import c4 from '../../../assets/images/carousel/c4.jpg';
-import c5 from '../../../assets/images/carousel/c5.jpg';
-import c6 from '../../../assets/images/carousel/c6.jpg';
-import c7 from '../../../assets/images/carousel/c7.jpg';
-import c8 from '../../../assets/images/carousel/c8.jpg';
-import c9 from '../../../assets/images/carousel/c9.jpg';
-import c10 from '../../../assets/images/carousel/c10.jpg';
-import c11 from '../../../assets/images/carousel/c11.jpg';
-import c12 from '../../../assets/images/carousel/c12.jpg';
-import c13 from '../../../assets/images/carousel/c13.jpg';
+import c1 from '/images/carousel/c1.jpg';
+import c2 from '/images/carousel/c2.jpg';
+import c3 from '/images/carousel/c3.jpg';
+import c4 from '/images/carousel/c4.jpg';
+import c5 from '/images/carousel/c5.jpg';
+import c6 from '/images/carousel/c6.jpg';
+import c7 from '/images/carousel/c7.jpg';
+import c8 from '/images/carousel/c8.jpg';
+import c9 from '/images/carousel/c9.jpg';
+import c10 from '/images/carousel/c10.jpg';
+import c11 from '/images/carousel/c11.jpg';
+import c12 from '/images/carousel/c12.jpg';
+import c13 from '/images/carousel/c13.jpg';
 
 const ProductCarousel = () => {
   const [count, setCount] = useState<number>(1);

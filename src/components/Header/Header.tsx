@@ -64,7 +64,7 @@ const Header = () => {
         </div>
         <div className='header_option'>
           <span className='cart-icon'>
-            <img src='/src/assets/nav-sprite-global.png' alt='Cart Icon' />
+            <img src='/nav-sprite-global.png' alt='Cart Icon' />
           </span>
           <span className='cart-count'>
             <strong>15</strong>
